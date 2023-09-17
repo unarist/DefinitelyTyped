@@ -244,25 +244,25 @@ export function verify(token: string, secretOrPublicKey: Secret, options?: Verif
 export function verify(
     token: string,
     secretOrPublicKey: Secret | GetPublicKeyOrSecret,
-    callback?: VerifyCallback<JwtPayload | string>,
+    callback: VerifyCallback<JwtPayload | string>,
 ): void;
 export function verify(
     token: string,
     secretOrPublicKey: Secret | GetPublicKeyOrSecret,
     options: VerifyOptions & { complete: true },
-    callback?: VerifyCallback<Jwt>,
+    callback: VerifyCallback<Jwt>,
 ): void;
 export function verify(
     token: string,
     secretOrPublicKey: Secret | GetPublicKeyOrSecret,
-    options?: VerifyOptions & { complete?: false },
-    callback?: VerifyCallback<JwtPayload | string>,
+    options: VerifyOptions & { complete?: false },
+    callback: VerifyCallback<JwtPayload | string>,
 ): void;
 export function verify(
     token: string,
     secretOrPublicKey: Secret | GetPublicKeyOrSecret,
-    options?: VerifyOptions,
-    callback?: VerifyCallback,
+    options: VerifyOptions,
+    callback: VerifyCallback,
 ): void;
 
 /**
